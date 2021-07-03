@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <!-- phone1 -->
+    <div id="phone1">
+        <div id="batery1" class="rim">
+
+        </div>
+        <div id="screen1">
+            <table id="main-screen1">
+                <tr>
+                    <th onclick="display_textingScreen(Nokia,1)" >Soạn tin nhắn</th>
+                </tr>
+                <tr>
+                    <th class="inbox-th" onclick="display_inbox(Nokia,1)">Hộp thư đến <p id="count1"></p></th>
+                </tr>
+                <tr>
+                    <th onclick="display_outbox(Nokia,1)">Hộp thư đi</th>
+                </tr>
+            </table>
+            <div id="texting-screen1">
+                <input type="text" id="text1">
+                <button onclick="return_mainMenu('texting-screen1',1)">return</button>
+                <button onclick="send(Nokia,Iphone,1,2)" style="float: right;">send</button>
+            </div>
+            <div id="inbox-screen1">
+                <table>
+                    <tbody  id="content-inbox1">
+
+                    </tbody>
+                </table>
+                <button onclick="return_mainMenu('inbox-screen1',1)">return</button>
+            </div>
+            <div id="outbox-screen1">
+                <table>
+                    <tbody id="content-outbox1">
+
+                    </tbody>
+                </table>
+                <button onclick="return_mainMenu('outbox-screen1',1)">return</button>
+            </div>
+        </div>
+        <div id="power-area1" class="rim">
+            <button class="power-btn" onclick="On_Off(Nokia,1)"></button>
+        </div>
+    </div>
+    <!-- phone 2 -->
+    <div id="phone2">
+        <div id="batery2" class="rim">
+
+        </div>
+        <div id="screen2">
+            <table id="main-screen2">
+                <tr>
+                    <th onclick="display_textingScreen(Iphone,2)" >Soạn tin nhắn</th>
+                </tr>
+                <tr>
+                    <th class="inbox-th" onclick="display_inbox(Iphone,2)">Hộp thư đến <p id="count2"></p></th>
+                </tr>
+                <tr>
+                    <th onclick="display_outbox(Iphone,2)">Hộp thư đi</th>
+                </tr>
+            </table>
+            <div id="texting-screen2">
+                <input type="text" id="text2">
+                <button onclick="return_mainMenu('texting-screen2',2)">return</button>
+                <button onclick="send(Iphone,Nokia,2,1)" style="float: right;">send</button>
+            </div>
+            <div id="inbox-screen2">
+                <table>
+                    <tbody  id="content-inbox2">
+
+                    </tbody>
+                </table>
+                <button onclick="return_mainMenu('inbox-screen2',2)">return</button>
+            </div>
+            <div id="outbox-screen2">
+                <table>
+                    <tbody id="content-outbox2">
+
+                    </tbody>
+                </table>
+                <button onclick="return_mainMenu('outbox-screen2',2)">return</button>
+            </div>
+        </div>
+        <div id="power-area2" class="rim">
+            <button class="power-btn" onclick="On_Off(Iphone,2)"></button>
+        </div>
+    </div>
+    <!--  -->
+    <script src="Mobile.js"></script>
+</body>
+</html>

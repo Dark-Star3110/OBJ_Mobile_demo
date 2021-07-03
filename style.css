@@ -1,0 +1,75 @@
+#phone1,#phone2{
+    border: 4px solid #000;
+    width: 256px;
+    height: 400px;
+}
+#phone2{
+    position:absolute;
+    top: 10px;
+    margin-left: 500px;
+}
+.rim{
+    width: inherit;
+    height: 64px;
+    background-color: #000;
+    color: #fff;
+}
+
+#batery1,#batery2{
+    text-align: right;
+    border-bottom: 2px solid #fff;
+}
+
+#main-screen1,#main-screen2{
+    height: 272px;
+}
+
+th,td{
+    border: 1px solid #000;
+    width: 256px;
+    font-size: 24px;
+}
+
+.inbox-th{
+    height: 40px;
+    padding: 10px;
+}
+
+#texting-screen1,#inbox-screen1,#outbox-screen1{
+    display: none;
+    width: 256px;
+    height: 268px;
+}
+
+#texting-screen2,#inbox-screen2,#outbox-screen2{
+    display: none;
+    width: 256px;
+    height: 268px;
+}
+
+input{
+    width: 230px;
+    height: 240px;
+    margin-left: 10px;
+}
+
+#count1,#count2{
+    display: none;
+    float: right;
+    background-color: red;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+#power-area1,#power-area2{
+    border-top: 2px solid #fff;
+}
+
+.power-btn{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: 14px 112px;
+    background-color: gray;
+}
