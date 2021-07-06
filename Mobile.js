@@ -88,22 +88,23 @@ function send(phone1,phone2,i,j){
     document.getElementById('count'+j).innerHTML=count;
     phone1.batery.decreaseEnergy();
     getBatery(phone1,'batery'+i);
+    let html='<audio autoplay><source src="./mp3/SMSIPhoneRingtone.mp3"></audio>';
+    document.getElementById('music').innerHTML=html;
 }
 
 function On_Off(phone,i){
     if(phone.checkStatus()=='on'){
         // document.getElementById('main-screen').style.display='hidden'; 
         phone.turnOff();
-        document.getElementById('main-screen'+i).style.backgroundColor='black';
-        document.getElementById('main-screen'+i).style.cursor='not-allowed';
-        document.getElementById('main-screen'+i)
+        document.getElementById('screen'+i).style.backgroundColor='black';
+        document.getElementById('screen'+i).style.cursor='not-allowed';
        return;
     //    document.getElementById('main-screen').style.display='block'; 
     }
     if(phone.checkStatus()=='off'){
        phone.turnOn();
-       document.getElementById('main-screen'+i).style.backgroundColor='white';
-       document.getElementById('main-screen'+i).style.cursor='pointer';
+       document.getElementById('screen'+i).style.backgroundColor='white';
+       document.getElementById('screen'+i).style.cursor='pointer';
        return;
     }
 }
